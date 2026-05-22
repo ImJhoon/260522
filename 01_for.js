@@ -16,3 +16,36 @@ for (let i = 0; i < arr.length; i++) {
 
   console.log(arr[i]);
 }
+
+// 역방향 순회
+for (let i = arr.length; i > 0; i--) {
+  console.log(arr[i - 1]);
+}
+
+// 무한반복
+// for (;;){
+//     // for의 무한반복
+//     console.log("출력");
+// }
+
+// 중첩 for문
+// 블록스코프 -> 하위 {} 에서는 상위의 변수/상수와 같은 범위를 가짐
+
+for (let i = 0; i < 3; i++) {
+  for (let j = 0; j < 3; j++) {
+    console.log(`i ${i}, j ${j}`);
+  }
+}
+
+//표 형태의 데이터를 탐색할 때 (행렬)
+const matrix = [
+  [1, "ja", "축구"],
+  [2, "sw", "코딩"],
+  [3, "ba", "야구"],
+];
+
+for (let i = 0; i < matrix.length; i++){
+    for (let j = 0; j < matrix[i].length; j++){
+        console.log(matrix[i][j]);
+    }
+}
